@@ -1,0 +1,22 @@
+<div class="wishlist-bg py-5 min-vh-100 w-100">
+  <div class="container d-flex flex-column align-items-center">
+    <h5 class="mb-4 text-center">
+      MY Wishlist <i class="bi bi-heart"></i>
+    </h5>
+    <div class="wishlist-box bg-white p-4 rounded shadow" style="width: 80%;">
+      <div *ngFor="let item of wishlistItems" class="d-flex align-items-center justify-content-between mb-3 p-2 wishlist-item rounded">
+        <div class="d-flex align-items-center">
+          <img [src]="item.image" alt="Course" class="rounded me-3" style="width: 70px; height: 45px; object-fit: cover;">
+          <div>
+            <div class="fw-semibold">{{ item.title }}</div>
+            <div class="text-muted small">Price: {{ item.price }} $</div>
+          </div>
+        </div>
+        <div>
+          <button class="btn btn-link p-0 me-2"><i class="bi bi-cart3 fs-5"></i></button>
+          <button class="btn btn-link p-0"><i class="bi bi-heart-fill text-danger fs-5"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

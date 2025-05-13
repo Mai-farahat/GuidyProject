@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Course Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body { background: #eaf2fb; }
+    .sidebar { background: #f7faff; border-radius: 10px; padding: 20px; }
+    .review-card { background: #ffe9c7; border-radius: 10px; }
+    .quiz-btn { width: 100%; margin-bottom: 10px; }
+    .locked { opacity: 0.5; }
+  </style>
+</head>
+<body>
+    <div class="container">
+    
+        <div class="container-fluid py-4">
+          <div class="row">
+            <!-- Left Column -->
+            <div class="col-lg-8 mb-4">
+              <div class="card mb-3">
+                <div class="card-body">
+                  <h5 class="card-title">Learn Python Programming – Beginner to Master</h5>
+                  <p class="card-text">9 Lessons · 6h 30min</p>
+                </div>
+              </div>
+              <div appChangeColor class="card mb-5">
+                <div class="card-body">
+                  <h6>Predicting blood glucose levels</h6>
+                  <div class="ratio ratio-16x9 mb-3">
+                    <iframe src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+                  </div>
+                  <div>
+                    <span>0:05 / 03:26</span>
+                    <div class="progress" style="height: 5px;">
+                      <div class="progress-bar" style="width: 20%;"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card review-card p-3">
+                <div class="d-flex align-items-center mb-2">
+                  <img src="https://via.placeholder.com/50" class="rounded-circle me-2" alt="User">
+                  <div>
+                    <strong>Bulkin Simons</strong>
+                    <div class="text-warning">★★★★★</div>
+                  </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...</p>
+              </div>
+            </div>
+            <!-- Right Column (Sidebar) -->
+            <div class="col-lg-4">
+              <div class="sidebar mb-3">
+                <h6>Course Contents</h6>
+                <div class="progress mb-2" style="height: 6px;">
+                  <div class="progress-bar" style="width: 40%;"></div>
+                </div>
+                <div class="accordion" id="courseAccordion">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                        Get Started <span class="ms-auto small">1 Hour</span>
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show">
+                      <div class="accordion-body">
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">Lesson 1</li>
+                          <li class="list-group-item">Lesson 2</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Repeat for other sections -->
+                </div>
+              </div>
+              <div class="sidebar">
+                <h6>PRACTICE QUIZ</h6>
+                <button class="btn btn-primary quiz-btn">Lesson 01: Introduction about XD</button>
+                <button class="btn btn-warning quiz-btn">Lesson 01: Introduction about XD</button>
+                <button class="btn btn-info quiz-btn">Lesson 01: Introduction about XD</button>
+                <button class="btn btn-danger quiz-btn">Lesson 01: Introduction about XD</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

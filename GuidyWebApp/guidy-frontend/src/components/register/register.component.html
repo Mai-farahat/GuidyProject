@@ -1,0 +1,59 @@
+<div class="container-fluid min-vh-100 d-flex align-items-center justify-content-center bg-white">
+  <div class="row w-100 shadow rounded" style="max-width: 950px;">
+    <div class="col-md-6 p-0 d-none d-md-block position-relative">
+      <img src="https://i.pinimg.com/736x/4b/bc/5c/4bbc5c7f9365f56b36f3806bb40a1b9a.jpg" alt="Meeting" class="img-fluid rounded-start w-100 h-100" style="object-fit: cover;">
+    </div>
+    <div class="col-md-6 bg-white p-5 rounded-end">
+      <div class="text-center mb-4">
+        <h6 class="mb-2">Welcome to GUIDY</h6>
+        <p class="text-muted small">Your Gateway to Learning and Growth</p>
+      </div>
+      <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+          <label for="email" class="form-label">Email Address</label>
+          <input type="email" id="email" class="form-control rounded-pill" formControlName="email" placeholder="Enter your Email Address"
+            [ngClass]="{'is-invalid': email?.invalid && (email?.dirty || email?.touched)}">
+          <div *ngIf="email?.invalid && (email?.dirty || email?.touched)" class="invalid-feedback">
+            <div *ngIf="email?.errors?.['required']">Email is required.</div>
+            <div *ngIf="email?.errors?.['email']">Please enter a valid email address.</div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="username" class="form-label">User name</label>
+          <input type="text" id="username" class="form-control rounded-pill" formControlName="username" placeholder="Enter your User name"
+            [ngClass]="{'is-invalid': username?.invalid && (username?.dirty || username?.touched)}">
+          <div *ngIf="username?.invalid && (username?.dirty || username?.touched)" class="invalid-feedback">
+            <div *ngIf="username?.errors?.['required']">Username is required.</div>
+            <div *ngIf="username?.errors?.['minlength']">Username must be at least 3 characters long.</div>
+          </div>
+        </div>
+        <div class="mb-3 position-relative">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" id="password" class="form-control rounded-pill" formControlName="password" placeholder="Enter your Password"
+            [ngClass]="{'is-invalid': password?.invalid && (password?.dirty || password?.touched)}">
+          <div *ngIf="password?.invalid && (password?.dirty || password?.touched)" class="invalid-feedback">
+            <div *ngIf="password?.errors?.['required']">Password is required.</div>
+            <div *ngIf="password?.errors?.['minlength']">Password must be at least 6 characters long.</div>
+          </div>
+        </div>
+        <div class="mb-4 position-relative">
+          <label for="rePassword" class="form-label">Confirm Password</label>
+          <input type="password" id="rePassword" class="form-control rounded-pill" formControlName="rePassword" placeholder="Confirm your Password"
+            [ngClass]="{'is-invalid': (rePassword?.invalid && (rePassword?.dirty || rePassword?.touched)) || (registerForm.errors?.['passwordMismatch'] && (password?.touched || rePassword?.touched))}">
+          <div *ngIf="rePassword?.invalid && (rePassword?.dirty || rePassword?.touched)" class="invalid-feedback">
+            <div *ngIf="rePassword?.errors?.['required']">Confirming password is required.</div>
+          </div>
+          <div *ngIf="registerForm.errors?.['passwordMismatch'] && (password?.touched || rePassword?.touched) && !rePassword?.errors?.['required']" class="invalid-feedback d-block">
+            Passwords do not match.
+          </div>
+        </div>
+        <div *ngIf="errorMessage" class="alert alert-danger mt-3">{{ errorMessage }}</div>
+        <div *ngIf="successMessage" class="alert alert-success mt-3">{{ successMessage }}</div>
+        <button type="submit" class="btn btn-info w-100 rounded-pill text-white" [disabled]="isLoading">
+          <span *ngIf="isLoading" class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>
+          {{ isLoading ? 'Registering...' : 'Register' }}
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

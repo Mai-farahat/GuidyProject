@@ -1,0 +1,13 @@
+<div class="notification-bg py-5 min-vh-100 w-100">
+  <div class="container d-flex flex-column align-items-center">
+    <h5 class="mb-4 text-start w-100 text-center" >
+      Notifications
+    </h5>
+    <div class="notification-box bg-white p-4 rounded shadow" style="width: 80%;">
+      <div *ngFor="let note of notifications" class="p-3 mb-3 notification-item rounded">
+        <div class="fw-semibold">{{ note.title }}</div>
+        <div class="text-muted small">{{ note.details }}</div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+.cart-bg {
+  background: #eaf6fa;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.cart-box {
+  box-shadow: 0 4px 24px rgba(78, 205, 196, 0.10);
+}
+
+.cart-item {
+  background: #f8fafd;
+}
+
+.btn-info {
+  background-color: #4ecdc4;
+  border: none;
+}
+
+.btn-info:hover, .btn-info:focus {
+  background-color: #38b2ac;
+}

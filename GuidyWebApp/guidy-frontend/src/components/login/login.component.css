@@ -1,0 +1,31 @@
+body, .container-fluid {
+  background: #fff;
+}
+
+.btn-info {
+  background-color: #4ecdc4;
+  border: none;
+}
+
+.btn-info:hover, .btn-info:focus {
+  background-color: #38b2ac;
+}
+
+.btn-outline-info {
+  border-color: #4ecdc4;
+  color: #4ecdc4;
+}
+
+.btn-outline-info:hover, .btn-outline-info:focus {
+  background-color: #4ecdc4;
+  color: #fff;
+}
+
+.form-control:focus {
+  border-color: #4ecdc4;
+  box-shadow: 0 0 0 0.2rem rgba(78, 205, 196, 0.25);
+}
+
+.rounded-pill {
+  border-radius: 50rem !important;
+}

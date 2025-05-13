@@ -1,0 +1,13 @@
+.notification-bg {
+  background: #eaf6fa;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.notification-box {
+  box-shadow: 0 4px 24px rgba(78, 205, 196, 0.10);
+}
+
+.notification-item {
+  background: #f8fafd;
+}

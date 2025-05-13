@@ -1,0 +1,19 @@
+.card {
+  border-radius: 18px;
+  transition: box-shadow 0.2s;
+}
+.card:hover {
+  box-shadow: 0 6px 24px rgba(78, 205, 196, 0.12);
+}
+.card-img-top {
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+}
+.btn-outline-info {
+  border-color: #4ecdc4;
+  color: #4ecdc4;
+}
+.btn-outline-info:hover {
+  background: #4ecdc4;
+  color: #fff;
+}

@@ -1,0 +1,20 @@
+/* Add to your component or global styles */
+form .form-control,
+form .form-select {
+  border-radius: 50rem !important;
+}
+
+.btn-info {
+  background-color: #4ecdc4;
+  border: none;
+}
+
+.btn-info:hover,
+.btn-info:focus {
+  background-color: #38b2ac;
+  color: #fff;
+}
+
+.btn-outline-danger {
+  border-radius: 50rem;
+}

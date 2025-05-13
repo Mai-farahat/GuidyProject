@@ -1,0 +1,135 @@
+body {
+    background: #f6fafd;
+    font-family: 'Poppins', Arial, sans-serif;
+  }
+  
+  .dashboard-container {
+    min-height: 100vh;
+  }
+  
+  .sidebar {
+    width: 260px;
+    background: #fff;
+    border-right: 1px solid #e9ecef;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sidebar .nav-link {
+    color: #333;
+    border-radius: 8px;
+    padding: 8px 16px;
+    transition: background 0.2s, color 0.2s;
+  }
+  
+  .sidebar .nav-link.active,
+  .sidebar .nav-link:hover {
+    background: #eafaf7;
+    color: #2ec4c6;
+  }
+  
+  .sidebar .text-danger {
+    font-weight: 500;
+    margin-top: 2rem;
+  }
+  
+  .main-content {
+    background: #f6fafd;
+    min-height: 100vh;
+  }
+  
+  .greeting-card {
+    background: #2ec4c6;
+    color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(44, 62, 80, 0.08);
+    align-items: center;
+  }
+  
+  .greeting-card img {
+    background: #fff;
+    border-radius: 50%;
+    padding: 8px;
+  }
+  
+  .progress-card,
+  .achieved-card,
+  .streak-card {
+    background: #fafdff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(44, 62, 80, 0.06);
+  }
+  
+  .calendar-table th,
+  .calendar-table td {
+    padding: 0.5rem 0.3rem;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .calendar-table td {
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    vertical-align: middle;
+  }
+  
+  .calendar-red {
+    background: #ffeaea;
+    color: #e74c3c;
+    font-weight: bold;
+  }
+  
+  .calendar-green {
+    background: #eaffea;
+    color: #27ae60;
+    font-weight: bold;
+  }
+  
+  .calendar-gold {
+    background: #fffbe6;
+    color: #f1c40f;
+    font-weight: bold;
+  }
+  
+  .achieved-card .course-row {
+    background: #fff;
+    border-radius: 8px;
+    padding: 10px 16px;
+    margin-bottom: 12px;
+    box-shadow: 0 1px 4px rgba(44, 62, 80, 0.04);
+  }
+  
+  .achieved-card .course-img {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+  }
+  
+  .streak-dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #e9ecef;
+    margin-right: 10px;
+    border: 2px solid #fff;
+    box-shadow: 0 1px 4px rgba(44, 62, 80, 0.04);
+  }
+  
+  .streak-dot-filled {
+    background: #f1c40f;
+  }
+  
+  @media (max-width: 991px) {
+    .sidebar {
+      width: 100px;
+      padding: 1rem 0.5rem;
+    }
+    .main-content {
+      padding: 1rem !important;
+    }
+    .greeting-card img {
+      display: none !important;
+    }
+  }

@@ -1,0 +1,13 @@
+.knowledge-card {
+  background: #eaf6fb;
+  border-radius: 18px;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.06);
+  align-items: center;
+}
+
+.progress-circle {
+  width: 64px;
+  height: 64px;
+  border: 4px solid #b2e4f7;
+  font-size: 1.2rem;
+}

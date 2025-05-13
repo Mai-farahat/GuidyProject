@@ -1,0 +1,33 @@
+body, .container-fluid {
+  background: #fff;
+}
+
+.btn-info {
+  background-color: #4ecdc4;
+  border: none;
+}
+
+.btn-info.active, .btn-info:active, .btn-info:focus {
+  background-color: #38b2ac !important;
+  color: #fff !important;
+}
+
+.btn-info:hover {
+  background-color: #38b2ac;
+}
+
+.form-control:focus {
+  border-color: #4ecdc4;
+  box-shadow: 0 0 0 0.2rem rgba(78, 205, 196, 0.25);
+}
+
+.rounded-pill {
+  border-radius: 50rem !important;
+}
+
+img[alt="GUIDY Logo"] {
+  background: #fff;
+  border-radius: 10px;
+  padding: 5px 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}

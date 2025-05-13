@@ -1,0 +1,24 @@
+<div class="cart-bg py-5 min-vh-100 w-100">
+  <div class="container d-flex flex-column align-items-center">
+    <h5 class="mb-4 text-center">
+      Cart <i class="bi bi-cart"></i>
+    </h5>
+    <div class="cart-box bg-white p-4 rounded shadow" style="width: 80%;">
+      <div *ngFor="let item of cartItems" class="d-flex align-items-center justify-content-between mb-3 p-2 cart-item rounded">
+        <div class="d-flex align-items-center">
+          <img [src]="item.image" alt="Course" class="rounded me-3" style="width: 70px; height: 45px; object-fit: cover;">
+          <div>
+            <div class="fw-semibold">{{ item.title }}</div>
+            <div class="text-muted small">Price: {{ item.price }}$</div>
+          </div>
+        </div>
+        <button class="btn btn-info btn-sm rounded-pill px-4" (click)="removeItem(item)">REMOVE</button>
+      </div>
+      <div class="d-flex justify-content-between align-items-center mt-4 mb-3">
+        <span class="fw-semibold">Total price:</span>
+        <span class="fs-5">{{ getTotalPrice() }}$</span>
+      </div>
+      <button class="btn btn-info w-100 rounded-pill text-white">Checkout!</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,85 @@
+/* Main layout styles */
+.left-section, .right-section {
+    height: 100vh;
+    padding: 15px;
+}
+
+/* Left section cards height distribution */
+.first-card {
+    height: 20%;
+}
+
+.second-card {
+    height: 50%;
+}
+
+.third-card {
+    height: 30%;
+}
+
+/* Right section full height card */
+.full-height-card {
+    height: 100%;
+}
+
+/* Card styling */
+.card {
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: #ffffff;
+}
+
+.card-title {
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+/* Progress bar styling */
+.progress {
+    height: 8px;
+    background-color: #e9ecef;
+}
+
+.progress-bar {
+    background-color: #007bff;
+}
+
+/* Course list styling */
+.course-item {
+    margin-bottom: 1.5rem;
+}
+
+.course-item h6 {
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+/* Stats styling */
+.stat-item h6 {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.stat-item .h2 {
+    color: #007bff;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+    .left-section, .right-section {
+        height: auto;
+    }
+    
+    .first-card, .second-card, .third-card {
+        height: auto;
+        margin-bottom: 1rem;
+    }
+    
+    .full-height-card {
+        height: auto;
+        margin-top: 1rem;
+    }
+} 
